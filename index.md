@@ -1,327 +1,197 @@
-html,body {
-    margin: 0;
-    padding: 0;
-     width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en"><!-- language is selected-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile page</title>
+        <link rel="stylesheet" href="style.css">
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    </head>
+    <body>
 
+        <div class="content">
+            <div class="profile-wrap">
+                <!-- profile card starts-->
+                <div class="profile">
+                    <img src="img/profile.jpg" alt="Profile Pic"/>
+                    <span class="name">Stacey Adam</span> </div>
+                    <p class="status">Student, Osmania University </p>
+                    <div class="bio">I am senior year IT student who loves exploring.I am look forward to learning and utilising my knowledge for the better.<br>
+                    12/12/1999 <br> Hyderabad, India </div>
 
-.content {
-   /* margin-left: 20px;*/
-	display: grid;
-	grid: 'profile-wrap' auto
-          'activity'  50px
-		  'posts-wrap' auto
-		  / 1fr;
-    height: 100%;
+                    <div class='contact'><strong>Contact: </strong>xyz456@gmail.com <br><a href="">linkedin/johnadam456</a></div>
+                    <!--<div class="icon">
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>-->
 
+            </div>
+        <!-- profile card ends-->
 
-}
+        <!-- projects card starts-->
 
-.profile-wrap {
-   /* max-width: 300px;*/
-    margin: 0 0 0 10px;
-    border-bottom: 1px solid #ddd;
-    padding: 5px;
+                <div class="activity">
+                    <div class="section">
+                        <span class="sect-nos">48</span>
+                        <span class="sect-text">Posts</span>
+                    </div>
+                    <div class="section">
+                        <span class="sect-nos">104</span>
+                        <span class="sect-text">Connections</span>
+                    </div>
+                    <div class="section">
+                        <span class="sect-nos">21</span>
+                        <span class="sect-text">Saved</span>
+                    </div>
 
-}
+                </div>
 
-/* profile card starts*/
+        <!-- project card ends -->
 
-.profile {
-    padding: 5px;
-    display: flex;
+        <!-- feed starts
+            <div class="comp-feed">
+            <div class="feed">
+                <h2>Username</h2>
+                <h5>11:40 am   Tuesday</h5>
+                <hr>
+                <p class="description">User added an open source project named Zues to donut platform.</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-hand-o-up"></i></a></li>
+                    <li><a href="#"><i class="fa fa-hand-o-down"></i></a></li>
+                    <li><a href="#"><i class="fa fa-comments"></i></a></li>
+                </ul>
+            </div>
+            </div>-->
 
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    /*max-width: 300px;*/
+            <div class="posts-wrap">
+            <div class="row1">
+                     <div class = "row1-linkedin">
+                                 <i class = "fa fa-linkedin" style = "cursor:pointer;"></i>
+                                 <div class = "row-span">
+                                       <div><strong>LinkedIn</strong></div>
+                                       <div><span class = "lightgrey">12,107,982 followers</span></div>
+                                       <div><span class = "lightgrey">Promoted</span></div>
 
-}
+                                 </div>
+                     </div>
+                     <div class = "row1-follow" style = "cursor:pointer;">
+                        <i class = "fa fa-plus"></i> Follow
+                     </div>
 
+           </div>
+            <div class = "row2">
+             While many industries have been hit hard by COVID-19, some are on the rise.
+             Here are ten roles that are in-demand today and the skills to help you land th
+             <span class = "lightgrey" style = "cursor:pointer">..see more</span>
+           </div>
 
-.profile img{
-   /* grid-row: span 4;*/
-    display: flex;
-    margin-left: 10px;
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-}
-.profile span {
-    /*display: flex;
-    flex-direction: row;*/
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
- .status {
-    color: grey;
-    font-size: 18px;
-    margin-left: 5px;
-
-}
-.bio {
-    font-size: 16px;
-    margin-left: 5px;
-    padding: 5px;
-    line-height: 25px;
-
-}
-
- .contact {
-    text-decoration: none;
-    font-size: 16px;
-    color: #0033FF;
-    padding-left: 12px;
-
-}
-.contact a{
-    margin-left:55px;
-    color: #0033FF;
-}
-
-/*.icon {
-    padding-bottom: 7px;
-}
-/* profile card ends*/
-
-/* activity card starts*/
-
-.activity {
-     display:grid;
-   grid-template-columns: auto auto auto;
-   grid-gap: 10px;
-   padding: 10px;
-   border-top: 1px solid #ddd;
-   border-bottom: 1px solid #ddd;
-
-}
-.section {
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   cursor: pointer;
-}
-.section .sect-nos{
-    font-weight: 600;
-    text-align: center;
-}
-.section .sect-text{
-    text-align: center;
-    display:flex;
-    justify-content: space-between;
-    font-size: medium;
-}
-
-/* project card ends*/
-.posts-wrap{
-  flex:40%;
-
-  margin: 0px 10px;
-  margin-top: 10px;
-}
-.content1{
-         width:100%;
-         background: white;
-         box-shadow:0px 0px 2px 0px rgb(121,136,145);
-         border-radius: 3px;
-}
-.row1{
-  display:flex;
-  padding:15px 10px;
-  justify-content: space-between;
-  align-items: center;
-}
+           <div class="row3">
+             <img src="img/office.jpg" alt="Some Error Occured">
+           </div>
+           <div class="row4" style = "padding: 5px 10px">
+             <div class = "lightgrey commentbox" >
+               <div>
+                 <i class = "fa fa-thumbs-up"  style="color:#1485bd;padding-right:3px;"></i>
+                 759
+              </div>
+              <div>
+             <!--span style = "vertical-align:super;font-size:20px;color:rgba(0,0,0,0.7)">.</span-->
+              <span style = "padding-right:5px;">&middot;</span>  11 Comments</div>
+             </div>
+             <hr style = "margin-top:3px;">
+           </div>
 
 
-.row1 .row1-linkedin{
+           <div class="row5">
+             <div> <i class = "fa fa-thumbs-o-up"></i> Like </div>
+             <div><i class = "fa fa-comment"></i> Comment </div>
+             <div><i class = "fa fa-share"></i> Share </div>
+             <div> <i class = "fa fa-send"></i> Send </div>
+           </div>
 
-  display:flex;
-}
-.row1 .row1-linkedin i{
-  font-size: 40px;
-  color:#0077b5;
-}
+       </div>
 
-.row-span{
-  display: flex;
-  margin-left:10px;
-  flex-direction: column;
-  align-items: flex-start;
-}
+       <div class="content2">
+            <div class = "content2-row1">
+              <div class = "content2-profile-wrapper" style = "cursor:pointer;">
+                <div class = "content2-row1-profilePic">
+                        <img src="img/profile.jpg" alt="">
 
-.row1-follow{
-  color:#0073b1;
-}
+                </div>
+                <div class = "row-span">
+                    <div><strong>Stacey Adam</strong></div>
+                    <div> <span class = "lightgrey">Software Engineer</span></div>
+                    <div><span class = "lightgrey"> 2d . <i class = "fa fa-globe"></i></span></div>
 
-.row2{
-    padding-bottom:10px;
-    padding-left:10px;
-}
-.row3{
-  width:100%;
-  height:150px;
+                  </div>
+              </div>
+              <i class = "fa fa-ellipsis-h" style = "padding-right:10px;cursor:pointer;"></i>
+            </div>
 
-}
+            <div class="content2-row2">
+              Which CSS framework is good for Angular 2+ apart from bootstrap any suggestions??
+            </div>
+            <div class="content2-row3" style = "padding: 5px 10px">
+              <div class = "lightgrey commentbox" >
+                <div>
+                 <i class = "fa fa-thumbs-up" style="color:#1485bd;padding-right:8px;"></i>6
+               </div>
+               <div>
+              <!--span style = "vertical-align:super;font-size:20px;color:rgba(0,0,0,0.7)">.</span-->
+               <span style = "padding-right:5px;">&middot;</span>  8 Comments</div>
+              </div>
+              <hr style = "margin-top:3px;">
+            </div>
+              <div class="row5">
+             <div> <i class = "fa fa-thumbs-o-up"></i> Like </div>
+             <div><i class = "fa fa-comment"></i> Comment </div>
+             <div><i class = "fa fa-share"></i> Share </div>
+             <div> <i class = "fa fa-send"></i> Send </div>
+           </div>
 
-.row3 img{
-  width:100%;
-  height:100%;
-  object-fit: cover;
-}
+           <div class="content2">
+            <div class = "content2-row1">
+              <div class = "content2-profile-wrapper" style = "cursor:pointer;">
+                <div class = "content2-row1-profilePic">
+                        <img src="img/profile.jpg" alt="">
 
-.row4{
-  padding:10px 10px;
+                </div>
+                <div class = "row-span">
+                    <div><strong>Stacey Adam</strong></div>
+                    <div> <span class = "lightgrey">Software Engineer</span></div>
+                    <div><span class = "lightgrey"> 2d . <i class = "fa fa-globe"></i></span></div>
 
-}
+                  </div>
+              </div>
+              <i class = "fa fa-ellipsis-h" style = "padding-right:10px;cursor:pointer;"></i>
+            </div>
 
-
-.row5{
-  display:flex;
-  align-items: center;
-  padding:5px 10px;
-}
-
-.row5>div{
-  height:30px;
-  margin-right: 10px;
-  color:#666666;
-  font-family: Helvetica;
-  font-size:.9rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding:0px 5px;
-  justify-content: space-around;
-  transition:0.1s ease-out;
-}
-.row5 div i, .row6>div>div{
-  padding-right:5px;
-}
-
-.row5 div:hover{
-  background:#f3f6f8;
-}
-
-.content2{
-  margin-top:10px;
-  background: white;
-  box-shadow:0px 0px 2px 1px rgb(121,136,145);
-  border-radius: 5px;
-  margin-bottom: 50px;
-}
-
-.content2-row1{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.content2-profile-wrapper{
-  display: flex;
-  padding:15px 10px;
-}
-
-.content2-row1-profilePic{
-  width:50px;
-  height:50px;
-
-}
-
-.content2-row1-profilePic img{
-  width:100%;
-  height:100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.content2-row2{
-  padding:5px 10px;
-}
-
-.commentbox{
-  display: flex;
-  align-items: center;
-  justify-content:flex-start;
-
-}
-
-/* feed starts
-.comp-feed{
-    margin-left:30%;
-    margin-top: -37%;
-
-}
-.comp-feed .feed{
-    float: right;
-}
-.feed {
-    /*width: 700px;
-    float: right;
-     box-shadow: 0 4px 8px 4px rgba(0, 0.2, 0, 0.2);
-    margin-right: 25%;
-    margin-bottom: 2%;
-
-}
-
-.feed h2 {
-    padding-left: 5%;
-}
-
-.feed hr {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: -1%;
-    height: 3px;
-    background-color: cornflowerblue;
-}
-.feed h5 {
-    padding-left: 5%;
-    margin-top: -2%;
-    color: grey;
-}
-
-.description {
-    margin-left: 4%;
-    height: 100px;
-    font-size: 20px;
-}
-
-.feed ul li {
-    list-style-type: none;
-    display: inline;
-}
-
-.feed ul li i {
-    font-size: 20px;
-    padding-right: 4%;
-    color: black;
-} */
+            <div class="content2-row2">
+              According to Millenial Survey, 3 ot of 4 Indian respondents were pleased that businesses prioritised people over profits.
+            </div>
+            <div class="content2-row3" style = "padding: 5px 10px">
+              <div class = "lightgrey commentbox" >
+                <div>
+                 <i class = "fa fa-thumbs-up" style="color:#1485bd;padding-right:8px;"></i>12
+               </div>
+               <div>
+              <!--span style = "vertical-align:super;font-size:20px;color:rgba(0,0,0,0.7)">.</span-->
+               <span style = "padding-right:5px;">&middot;</span>  5 Comments</div>
+              </div>
+              <hr style = "margin-top:3px;">
+            </div>
+              <div class="row5">
+             <div> <i class = "fa fa-thumbs-o-up"></i> Like </div>
+             <div><i class = "fa fa-comment"></i> Comment </div>
+             <div><i class = "fa fa-share"></i> Share </div>
+             <div> <i class = "fa fa-send"></i> Send </div>
+           </div>
 
 
-@media(max-width: 750px) {
-    .profile-wrap {
-        margin-left: 0;
-        float: none;
+            <!-- feed ends-->
 
-    }
-    .profile {
-        margin-left: 0;
-    }
-
-    .posts-wrap{
-    /*flex:100%; */
-    width:100%;
-    margin:10px 0px 0px 0px;
-    box-sizing: border-box;
-  }
-
-  .commentbox{
-     justify-content: space-between;
-   }
-
-   
-
-}
+        </div>
+        <!-- html ends -->
